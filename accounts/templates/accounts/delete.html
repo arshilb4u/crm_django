@@ -1,0 +1,14 @@
+{%extends 'accounts/main.html'%}
+{%load static%}
+{%block content%}
+<p>Are you sure you want to delete the item "{{item}}"</p>
+<form method="POST">
+
+    <a href="{%url 'home'%}">Cancel</a>
+
+    <input type="submit" name="submit">
+
+</form>
+
+
+{%endblock%}
